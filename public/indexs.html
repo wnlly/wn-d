@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+      // function EventTarget(){
+      //   this.handlers={}
+      // }
+      // EventTarget.prototype={
+      //   constructor:EventTarget,
+      //   addHandler:function(type,handler){
+      //     if(typeof this.handlers[type]==='undefined'){
+      //       this.handlers[type]=[]
+      //     }
+      //     this.handlers.push(handler)
+      //   },
+      //   fire:function(e){
+      //     if(!e.target){
+      //       e.target=this
+      //     }
+      //     if(this.handlers[e.type] instanceof Array){
+      //       var handlers= this.handlers[event.type];
+      //       for(var i=0,len=handlers.length;i<len;i++){
+      //         handlers[i](e)
+      //       }
+      //     }
+      //   }
+        
+      // }
+
+        var numbers= [1,2,3,4,5,6,7];
+        var result = numbers.every((item)=>item>2)
+        console.log(result)
+
+        console.log(numbers.map(function(item,index,array){
+          return item
+        }))
+       
+        console.log(numbers)
+
+        var pattern1= /\s\d/;
+        var pattern2 =/\.dat/
+        console.log(pattern1.source)
+        console.log(pattern1.test('dd'))
+        console.log(pattern2.test('.dat'))
+  </script>
+</body>
+
+</html>
